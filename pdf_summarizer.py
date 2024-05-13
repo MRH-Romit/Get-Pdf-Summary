@@ -11,7 +11,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 def read_pdf_with_pdfplumber(file_path):
-    text = ''
+    text = 'hellow world'
     with pdfplumber.open(file_path) as pdf:
         for page in pdf.pages:
             text += page.extract_text()
